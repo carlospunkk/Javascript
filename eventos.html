@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <script type="text/javascript"></script>
+    <title>eventos Dom</title>
+    <style>
+        div#area{
+  font: normal 20 pt Arial ; 
+  background: rgb(133, 182, 133);
+  color:white;
+  width: 200px;
+  height:200px ;
+  line-height: 200px;
+  text-align: center;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div id= "area"> interaja....</div>
+    <script>
+
+
+var a = window.document.getElementById('area')// cria a varia global (a) lista os meus eventos
+    a.addEventListener('click',clicar)
+    a.addEventListener('mouseenter',entrar)
+    a.addEventListener('mouseout',sair)
+    
+//evento 1 clicar
+function clicar() {
+        a = window.document.getElementById('area')// a variavel (a) o Id (area) 
+        a.innerTextinner = "clicou"// a tag (a) recebe o novo texto "clicou"
+
+}          
+function entrar(){
+    a = window.document.getElementById ('area')
+    a.style.background="red"
+    a.innerText="entrou"
+}
+function sair(){
+        a = window.document.getElementById('area')
+        a.style.background= "rgb(133,182,133)"
+        a.innerText="saiu"
+}
+
+</script>
+</body>
+</html>

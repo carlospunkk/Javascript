@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script type = "text/javascript"></script>
+    <meta charset = "UTF-8">
+    <title> Eventos Dom</title>
+
+    <style>
+
+    body{
+           background:rgb(68,125,199);
+           color:white;
+           font:normal 18pt Arial;
+    }
+         </style>
+    
+</head>
+
+<body>
+    <h1>estudos</h1>
+    <p>aqui vai o resultado</p>
+    <div id ="in"> estudos sociais </div>
+    <p>novo</p>
+    <p> local do <Strong>Dom</Strong> </p>
+    <p>amor</p>
+    
+
+    <script>
+        var corpo = window.document.body
+        var w = window.document.getElementsByTagName('p')[2]//a var w recebe o elemento da tag p
+        window.document.write ("olá seu texto aqui "+ w.innerText)//mostra a var w com o texto concatenado com o tipo de texto
+
+        
+        w.style.color ='yellow'// mudo a cor do elemento var w chamando o css color
+        corpo.style.background='black'
+
+        var e = window.document.getElementById('in') // a variavel e recebe os elementos da divi id
+        window.document.write( "voce já começou os" + e.innerHTML )// aqui mostra na tela usando a var e mais o iinerhtml toda estrutura
+        e.style.background="orange"
+        
+
+
+
+        
+           
+    </script>
+            
+    </head>  
+    
+</body>
+
+</html>

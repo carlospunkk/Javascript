@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script type="text/javascript"></script>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>sistema multas</h1>
+   
+
+<input type="number" name="textvel" id="textvel">
+<input type="button" name="verificar" onclick="calcular()">
+<div id="res"></div>
+
+
+
+  
+<script>      
+function calcular(){
+    var txtv = window.document.getElementById('textvel')//o id textvel recebe a informação do usuario velocidade
+    var res = window.document.getElementById('res')//o id recebe o resultado
+    var r = Number (txtv.value)// aqui o valor foi convertido
+    res.innerHTML=("sua velocidade é "+r)
+
+    if (r > 60){
+        res.innerHTML = ("ultrapassou a velocidade Multado!!!")
+        res.innerHTML += '<p>dirija sempre com o cinto de segurança</p>'// acrescenta mais um texto
+
+    }else{
+        res.innerHTML = ("velocidade permitida neste trecho siga viagem !!!")
+    }
+
+    //utilizando a condição if (se), else(senão)
+
+    
+}
+</script>
+</body>
+</html>
+
+
+

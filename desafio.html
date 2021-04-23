@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+  
+    <title>Desafio</title>
+</head>
+<style>
+h1 ,p {
+    color:orange;
+}
+
+
+</style>
+
+<body>
+    <h1>nacionalidade</h1>
+    <input type="text"name="tx1"id="texto1"> digite sua nacionalidade 
+    <input type="button"name="sabe"onclick="saber()">
+    <p  id="res"></p>
+
+    <script>
+     function saber(){
+         var nacionalidade1= String(document.getElementById('texto1'))
+         var res = document.getElementById('res')
+
+         var vel = String(nacionalidade1.value)
+         res.innerText=(nacionalidade1)
+         if (nacionalidade1 == "Brasil") {
+
+             res.innerHTML = ("você é brasileiro")
+
+         }else{
+
+             res.innerHTML = ("você é estrangeiro")
+         }
+
+     }
+ </script>
+
+</body>
+</html>
